@@ -1,0 +1,1312 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\pconw.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\pconw.ico"
+IDR_PCONWTYPE           ICON    DISCARDABLE     "res\\pconwDoc.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\loo01b.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDR_LAGOMETER           BITMAP  DISCARDABLE     "res\\lagomete.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDM_LAUNCHEXPLORER
+    BUTTON      ID_FILE_CLEARWINDOW
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_LIST_USERS
+    SEPARATOR
+    BUTTON      ID_SERVER_INFO
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_FILE_PREFERENCES
+    SEPARATOR
+    BUTTON      IDC_STOPSCROLL
+    BUTTON      IDC_SETAWAY
+    BUTTON      ID_CONTEXT_HELP
+    BUTTON      ID_BUTTON32780
+    BUTTON      IDM_SHOWCHAN
+END
+
+IDR_LAGOMETER TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32847
+    BUTTON      ID_BUTTON32849
+    BUTTON      ID_BUTTON32850
+    BUTTON      ID_BUTTON32851
+    BUTTON      ID_BUTTON32852
+    BUTTON      ID_BUTTON32853
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Clear Buffer",               IDC_FILE_CLEARWINDOW
+        MENUITEM "&Log Window To Disk",         ID_FILE_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Preferences",                IDC_SETPREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Commands"
+    BEGIN
+        MENUITEM "List &Users",                 ID_LIST_USERS
+        MENUITEM "&Server Info",                ID_SERVER_INFO
+        MENUITEM "S&top Scrolling",             IDC_STOPSCROLL
+        MENUITEM "Away...",                     IDC_SETAWAY
+        MENUITEM "&Join Selected Channel",      IDC_JOINSEL
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "&Show Channel List",          IDM_SHOWCHAN
+    END
+    POPUP "&Launch"
+    BEGIN
+        MENUITEM "&Configure Launchpad",        LAUNCH_CFG
+        MENUITEM SEPARATOR
+        MENUITEM "Game 0&1",                    IDM_LAUNCH01
+        MENUITEM "Game 0&2",                    IDM_LAUNCH02
+        MENUITEM "Game 0&3",                    IDM_LAUNCH03
+        MENUITEM "Game 0&4",                    IDM_LAUNCH04
+        MENUITEM "Game 0&5",                    IDM_LAUNCH05
+        MENUITEM "Game 0&6",                    IDM_LAUNCH06
+        MENUITEM "Game 0&7",                    IDM_LAUNCH07
+        MENUITEM "Game 0&8",                    IDM_LAUNCH08
+        MENUITEM "Game 0&9",                    IDM_LAUNCH09
+        MENUITEM "Game 10",                     IDM_LAUNCH10
+        MENUITEM "Game 11",                     IDM_LAUNCH11
+        MENUITEM "Game 12",                     IDM_LAUNCH12
+        MENUITEM "Game 13",                     IDM_LAUNCH13
+        MENUITEM "Game 14",                     IDM_LAUNCH14
+        MENUITEM "Game 15",                     IDM_LAUNCH15
+        MENUITEM "Game 16",                     IDM_LAUNCH16
+        MENUITEM "Game 17",                     IDM_LAUNCH17
+        MENUITEM "Game 18",                     IDM_LAUNCH18
+        MENUITEM "Game 19",                     IDM_LAUNCH19
+        MENUITEM "Game 20",                     IDM_LAUNCH20
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&StarGate Networks Home page", IDM_HOMEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&About PCon97...",            ID_APP_ABOUT
+    END
+END
+
+CG_IDR_POPUP_PCONW_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+    END
+END
+
+IDR_PCONWTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Clear Buffer",               IDC_FILE_CLEARWINDOW
+        MENUITEM "&Log Window To Disk",         ID_FILE_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Commands"
+    BEGIN
+        MENUITEM "List &Users",                 ID_LIST_USERS
+        MENUITEM "&Server Info",                ID_SERVER_INFO
+        MENUITEM "S&top Scrolling",             IDC_STOPSCROLL
+        MENUITEM "Away...",                     IDC_SETAWAY
+        MENUITEM "&Join Selected Channel",      IDC_JOINSEL
+    END
+    POPUP "&Preferences"
+    BEGIN
+        MENUITEM "&Config",                     IDC_SETPREFERENCES
+        MENUITEM "C&olors",                     ID_PREFERENCES_COLORS
+        MENUITEM "&Highlighting",               ID_PREFERENCES_HIGHLIGHTING
+        MENUITEM "&Font",                       ID_PREFERENCES_FONT
+        MENUITEM "F&unction Keys",              ID_PREFERENCES_FUNCTIONKEYS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Channel List",          IDM_SHOWCHAN
+        MENUITEM "&Descent Game Spy",           ID_MENUDSPY
+        MENUITEM SEPARATOR
+        MENUITEM "Microsoft &Explorer",         IDM_LAUNCHEXPLORER
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&StarGate Networks Home page", IDM_HOMEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&About PCon97...",            ID_APP_ABOUT
+    END
+END
+
+CG_IDR_POPUP_USER_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Ping",                       IDC_PING
+        MENUITEM "Toggle &Ignore",              IDM_IGNOREUSER
+        MENUITEM "Send &Message",               IDC_SENDMSG
+        MENUITEM "Initiate Secure &DCC Chat",   IDM_DCCCHAT
+        MENUITEM "Send &File",                  IDM_DCCSEND
+        MENUITEM "Toggle &Ignore",              ID_POPUP_TOGGLEIGNORE
+        MENUITEM "&Whois",                      IDC_WHOISUSER
+        MENUITEM SEPARATOR
+        POPUP "Operators"
+        BEGIN
+            MENUITEM "Grant &Operator Status",      ID_GRANTOPS
+            MENUITEM "Grant &Voice Status",         ID_GRANTVOICE
+            MENUITEM "Take Operator Status",        ID_TAKEOPS
+            MENUITEM "Take Voice Status",           ID_TAKEVOICE
+            MENUITEM "&Kick User",                  ID_KICKUSER
+        END
+    END
+END
+
+CG_IDR_POPUP_CHAN_ULIST MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&True Ping",                  IDM_UDPPING
+        MENUITEM "Toggle &Ignore",              IDM_IGNOREUSER
+        MENUITEM "I&RC Chat Ping",              IDC_PING
+        MENUITEM "Send &Message",               IDC_SENDMSG
+        MENUITEM "Initiate Secure &DCC Chat",   IDM_DCCCHAT
+        MENUITEM "Send &File",                  IDM_DCCSEND
+        MENUITEM "&Whois",                      IDC_WHOISUSER
+        MENUITEM SEPARATOR
+        POPUP "Operators"
+        BEGIN
+            MENUITEM "Grant &Operator Status",      ID_GRANTOPS
+            MENUITEM "Grant &Voice Status",         ID_GRANTVOICE
+            MENUITEM "Take Operator Status",        ID_TAKEOPS
+            MENUITEM "Take Voice Status",           ID_TAKEVOICE
+            MENUITEM "&Kick User",                  ID_KICKUSER
+        END
+    END
+END
+
+IDR_OPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Ping",                       IDC_PING
+        MENUITEM "Toggle &Ignore",              IDM_IGNOREUSER
+        MENUITEM "Send &Message",               IDC_SENDMSG
+        MENUITEM "Initiate Secure &DCC Chat",   IDM_DCCCHAT
+        MENUITEM "Send &File",                  IDM_DCCSEND
+        MENUITEM "Toggle &Ignore",              ID_POPUP_TOGGLEIGNORE
+        MENUITEM "&Whois",                      IDC_WHOISUSER
+        MENUITEM SEPARATOR
+        POPUP "Operators"
+        BEGIN
+            MENUITEM "Grant &Operator Status",      ID_GRANTOPS
+            MENUITEM "Grant &Voice Status",         ID_GRANTVOICE
+            MENUITEM "Take Operator Status",        ID_TAKEOPS
+            MENUITEM "Take Voice Status",           ID_TAKEVOICE
+            MENUITEM "&Kick User",                  ID_KICKUSER
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDC_STOPSCROLL,         VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_PCONWTYPE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDC_STOPSCROLL,         VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETUP DIALOGEX 0, 0, 228, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_RIGHT
+CAPTION "PCon97 Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14
+    CONTROL         "Sp&am Filter",IDC_SPAMFLTR,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,31,19,125,10
+    CONTROL         "P&rivate Chat Windows",IDC_PRIVCHAT,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,31,
+                    33,125,10
+    CONTROL         "Enable &Profanity Filter",IDC_ENABLEPROFANITYFILTER,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | 
+                    WS_TABSTOP,69,60,87,10
+    EDITTEXT        IDC_QUITMSG,77,88,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL,118,108,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,24,50,14
+    LTEXT           "Default Channel",IDC_STATIC,30,110,69,8,0,WS_EX_RIGHT
+    LTEXT           "Quit Message",IDC_STATIC,8,91,55,8,0,WS_EX_RIGHT
+    RTEXT           "Courier (8)",IDC_FONTDESC,77,128,81,8
+    LTEXT           "Font:",IDC_STATIC,45,128,17,8
+    CONTROL         "A&uto Log All Windows",IDC_AUTOLOG,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,31,
+                    7,125,10
+    LTEXT           "Chat Server:",IDC_STATIC,2,145,40,8
+    LTEXT           "Port:",IDC_STATIC,174,145,16,8
+    EDITTEXT        IDC_CHATSERVER,45,142,124,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHATPORT,194,142,27,14,ES_AUTOHSCROLL
+    CONTROL         "&Beep on private messages",IDC_BEEPONMESSAGE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,57,72,99,10
+    CONTROL         "Show &Join/Part/Quit Messages",IDC_SHOWJOINPART,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | WS_TABSTOP,31,
+                    46,125,10
+END
+
+IDD_PRIVATEMSG DIALOG DISCARDABLE  0, 0, 293, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Send a Private Message"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,279,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,66,25,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,177,25,50,14
+END
+
+IDD_FKEYSETUP DIALOG DISCARDABLE  0, 0, 265, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Program Function Keys"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_F2KEY,20,7,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F3KEY,20,24,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F4KEY,20,41,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F5KEY,20,58,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F6KEY,20,75,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F7KEY,20,92,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F8KEY,20,109,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F9KEY,20,126,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F10KEY,20,143,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F11KEY,20,160,239,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F12KEY,20,177,239,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,74,197,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,197,50,14
+    LTEXT           "F2",IDC_STATIC,6,10,9,8
+    LTEXT           "F4",IDC_STATIC,6,44,9,8
+    LTEXT           "F3",IDC_STATIC,6,27,9,8
+    LTEXT           "F6",IDC_STATIC,6,78,9,8
+    LTEXT           "F5",IDC_STATIC,6,61,9,8
+    LTEXT           "F7",IDC_STATIC,6,95,9,8
+    LTEXT           "F9",IDC_STATIC,6,129,9,8
+    LTEXT           "F8",IDC_STATIC,6,112,9,8
+    LTEXT           "F11",IDC_STATIC,6,163,13,8
+    LTEXT           "F10",IDC_STATIC,6,146,13,8
+    LTEXT           "F12",IDC_STATIC,6,180,13,8
+END
+
+IDD_DLGHIGHLIGHT DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Word Highlighter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,74,50,14
+    LISTBOX         IDC_WORDS,7,7,88,62,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_SAMPLECLR,103,15,76,8
+    PUSHBUTTON      "&Delete",IDC_DELETEITM,110,31,26,14
+    EDITTEXT        IDC_NEWTEXT,118,53,61,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "<<",IDC_ADD2LIST,101,53,13,14
+    PUSHBUTTON      "&Color",IDC_SETCOLOR,149,31,21,14
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 186, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Get File"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,52,50,14
+    LTEXT           "Local File Name",IDC_STATIC,7,15,52,8
+    EDITTEXT        IDC_FILE1NAME,63,12,94,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OFFERNUM,63,33,17,14,ES_AUTOHSCROLL
+    LTEXT           "Offer Number",IDC_STATIC,17,36,43,8
+    PUSHBUTTON      "?",IDC_GETFILENAME,159,12,14,14
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 70, 235
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "Courier New"
+BEGIN
+    LISTBOX         IDC_LIST1,0,0,33,85,LBS_SORT | WS_VSCROLL
+END
+
+IDD_COLORSETUP DIALOG DISCARDABLE  0, 0, 194, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup Colors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,105,140,50,14
+    PUSHBUTTON      "&Normal Text",IDC_NORMTXT,34,14,50,14
+    PUSHBUTTON      "&Action Msg",IDC_ACTIONTXT,34,35,50,14
+    PUSHBUTTON      "&Private Msg",IDC_PRIVATETXT,34,56,50,14
+    PUSHBUTTON      "&Status Msg",IDC_STATUSTXT,34,77,50,14
+    PUSHBUTTON      "&Background",IDC_BACKGROUND,34,98,50,14
+    LTEXT           "",IDC_NORMALSAMP,101,17,58,8
+    LTEXT           "",IDC_ACTIONSAMP,101,37,58,8
+    LTEXT           "",IDC_PRIVATESAMP,101,57,58,8
+    LTEXT           "",IDC_STATUSSAMP,101,77,58,8
+    LTEXT           "",IDC_BACKSAMP,101,97,58,8
+    PUSHBUTTON      "&URL",IDC_COLORURL,33,119,50,14
+    LTEXT           "",IDC_URLSAMP,101,118,58,8
+END
+
+IDD_AWAYMSG DIALOG DISCARDABLE  0, 0, 209, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter your away message"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_AWAYMSG,7,7,195,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,26,50,14
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "The Player's Connection for Windows"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "The Player's Connection 97 Version 1.2",IDC_STATIC,41,
+                    10,166,8
+    LTEXT           "Copyright © 1996, StarGate Networks\nCopyright © 1996 && 1997, Kevin Bentley",
+                    IDC_STATIC,41,25,131,20
+    DEFPUSHBUTTON   "OK",IDOK,175,20,32,14,WS_GROUP
+END
+
+IDD_CHANNELBAR DIALOG DISCARDABLE  0, 0, 78, 174
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_COMBO1,0,0,77,153,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Hide Me",IDM_SHOWCHAN,3,155,71,12
+END
+
+IDD_LAUNCHER DIALOG DISCARDABLE  0, 0, 256, 34
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_LAUNCH1,1,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH2,22,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH3,43,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH4,64,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH5,85,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH6,106,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH7,127,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH8,148,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH9,169,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH10,211,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH11,232,6,21,20,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_LAUNCH12,190,6,21,20,SS_NOTIFY
+END
+
+IDD_LAUNCHCONFIG DIALOG DISCARDABLE  0, 0, 288, 205
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configure Launchpad"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,184,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,184,50,14
+    LISTBOX         IDC_LIST1,7,24,88,146,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PROGNAME,105,20,175,14,ES_AUTOHSCROLL
+    LTEXT           "Program Name",IDC_STATIC,105,10,48,8
+    EDITTEXT        IDC_FILENAME1,105,46,129,14,ES_AUTOHSCROLL
+    LTEXT           "File Name",IDC_STATIC,105,35,32,8
+    EDITTEXT        IDC_PROGDIR,105,71,129,14,ES_AUTOHSCROLL
+    LTEXT           "Program Directory",IDC_STATIC,105,60,57,8
+    EDITTEXT        IDC_PROGPARMS,105,95,175,14,ES_AUTOHSCROLL
+    LTEXT           "Program Parameters",IDC_STATIC,105,85,64,8
+    LTEXT           "Icon",IDC_STATIC,105,110,15,8
+    ICON            "",IDC_PROGICON,105,120,21,20,WS_BORDER
+    PUSHBUTTON      "&Select New Icon",IDC_CHOOSEICON,135,123,70,14
+    PUSHBUTTON      "&Add",IDC_ITEMADD,7,7,36,14
+    PUSHBUTTON      "&Remove",IDC_ITEMDEL,60,7,36,14
+    PUSHBUTTON      "&Find...",IDC_FILEFIND,243,58,38,14
+    PUSHBUTTON      "&Look for Games",IDC_FINDGAMES,20,180,59,14
+    CONTROL         "&Close Chat when playing games",IDC_CLOSECHAT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,146,116,10
+    CONTROL         "C&onfirm before launching?",IDC_CONFIRMLNCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,161,98,10
+END
+
+IDD_NEWLAUNCHITEM DIALOG DISCARDABLE  0, 0, 234, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add New Launchpad Item"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TITLE,7,25,220,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,59,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,45,50,14
+    CTEXT           "Please Enter the Title of the new program:",IDC_STATIC,
+                    7,7,220,8
+END
+
+IDD_ABORTSCAN DIALOG DISCARDABLE  0, 0, 186, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Launchpad"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,64,33,50,14
+    CTEXT           "Searching for New Games...",IDC_STATIC,7,13,172,11
+END
+
+IDD_CHANULIST DIALOG DISCARDABLE  0, 0, 53, 73
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "Courier New"
+BEGIN
+    LISTBOX         IDC_LIST1,0,0,49,71,LBS_SORT | WS_VSCROLL
+END
+
+IDD_SPLASH DIALOG DISCARDABLE  0, 0, 202, 144
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            150,IDC_STATIC,21,33,21,20,SS_CENTERIMAGE
+END
+
+IDD_PROMPTKICK DIALOG DISCARDABLE  0, 0, 235, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter the Reason for the Kick"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_KICKMSG,7,7,221,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,125,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,59,26,50,14
+END
+
+IDD_DCC_FILE DIALOG DISCARDABLE  0, 0, 125, 59
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Received xxxxxxx Bytes",IDC_DCC_PROGRESS,9,24,106,8
+    LTEXT           "Filename.txt",IDC_DCC_FILENAME,28,8,89,10,SS_SUNKEN
+    LTEXT           "File:",IDC_STATIC,9,9,14,8
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    7,37,111,14
+END
+
+IDD_YESNODIALOG DIALOG DISCARDABLE  0, 0, 295, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Yes",IDOK,89,28,50,14
+    PUSHBUTTON      "&No",IDCANCEL,155,28,50,14
+    CTEXT           "Userxxx is sending you a file called files.txt. Do you want to receive it?",
+                    IDC_MESSAGETEXT,7,7,281,14,SS_CENTERIMAGE
+END
+
+IDD_LISTS DIALOG DISCARDABLE  0, 0, 315, 183
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Version",IDC_STATIC,3,3,60,38
+    CONTROL         "Descent I",IDC_DI,"Button",BS_AUTORADIOBUTTON,8,15,47,
+                    10
+    CONTROL         "Descent II",IDC_DII,"Button",BS_AUTORADIOBUTTON,8,28,49,
+                    10
+    LISTBOX         IDC_GAMELIST,0,67,98,97,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Socket:",IDC_STATIC,11,51,26,8
+    EDITTEXT        IDC_SOCKET,41,48,23,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SOCKETSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_ARROWKEYS,69,48,11,14
+    PUSHBUTTON      "&Refresh",IDC_REFRESH,65,18,29,14
+    LTEXT           "Game Name:",IDC_STATIC,102,8,42,8
+    EDITTEXT        IDC_GAMENAME,154,5,152,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Mission:",IDC_STATIC,102,28,26,8
+    EDITTEXT        IDC_MISSION,154,25,152,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Mission Level:",IDC_STATIC,102,47,46,8
+    EDITTEXT        IDC_LEVEL,154,44,20,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_DIFFICULTY,249,44,57,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    GROUPBOX        "Players",IDC_STATIC,102,95,209,83
+    EDITTEXT        IDC_ADDRESS,234,159,74,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Kills:",IDC_STATIC,197,124,16,8
+    EDITTEXT        IDC_KILLS,220,122,22,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Deaths:",IDC_STATIC,248,124,26,8
+    EDITTEXT        IDC_KILLS2,284,122,24,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_CURNUMPLAYERS,195,80,14,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAXPLAYERS,240,80,14,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Number of players:",IDC_STATIC,102,82,60,8
+    EDITTEXT        IDC_RANK,218,103,91,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Game Mode:",IDC_STATIC,102,65,42,8
+    EDITTEXT        IDC_MODE,154,63,100,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Score:",IDC_STATIC,245,142,22,8
+    EDITTEXT        IDC_SCORE,274,141,34,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Max:",IDC_STATIC,218,83,16,8
+    LTEXT           "Current:",IDC_STATIC,165,83,26,8
+    LTEXT           "Rank:",IDC_STATIC,187,106,20,8
+    LTEXT           "Difficulty:",IDC_STATIC,214,47,30,8
+    CHECKBOX        "Short Pkts",IDC_CHECK1,261,65,49,10
+    LTEXT           "PPS:",IDC_STATIC,261,83,17,8
+    EDITTEXT        IDC_PPS,280,80,29,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    LTEXT           "IP Address:",IDC_STATIC,191,162,37,8
+    LISTBOX         IDC_PLAYERLIST,107,105,75,66,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DUPNICK DIALOG DISCARDABLE  0, 0, 216, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nickname in use or invalid, please choose another!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NEWNICK,7,7,202,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,83,24,50,14
+END
+
+IDD_TABVIEW DIALOG DISCARDABLE  0, 0, 280, 19
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab2",IDC_TAB2,"SysTabControl32",TCS_OWNERDRAWFIXED | 
+                    TCS_FOCUSNEVER,0,0,280,19
+END
+
+IDD_CHANNELLIST DIALOG DISCARDABLE  0, 0, 220, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Channel List"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close Channel List",IDOK,7,168,206,14
+    LISTBOX         IDC_LIST1,7,17,206,131,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Join Selected Channel",IDC_JOINCHANNEL,7,150,206,14
+    LTEXT           "Channel",IDC_STATIC,7,7,27,8
+    LTEXT           "Users",IDC_STATIC,48,7,19,8
+    LTEXT           "Topic",IDC_STATIC,72,7,19,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PCON97 Application\0"
+            VALUE "FileVersion", "1, 2, 0, 0\0"
+            VALUE "InternalName", "PCON97\0"
+            VALUE "LegalCopyright", "Copyright © 1997 Stargate Networks\0"
+            VALUE "OriginalFilename", "PCON97.EXE\0"
+            VALUE "ProductName", "PCON97\0"
+            VALUE "ProductVersion", "1, 2, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETUP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 221
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_PRIVATEMSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_FKEYSETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DLGHIGHLIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_COLORSETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_AWAYMSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CHANNELBAR, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_LAUNCHCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_NEWLAUNCHITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_ABORTSCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_PROMPTKICK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_YESNODIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_LISTS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 312
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_DUPNICK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_CHANNELLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURURL              CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "The Player's Connection 97"
+    IDR_PCONWTYPE           "\nPconw\nPconw\n\n\nPconw.Document\nPconw Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "pcon97"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Log Window to Disk\nLog Window"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_SCRESTORE2      "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST2     "Activate Task List"
+    IDS_CHAT_HELP1          "Welcome to Chat, enter /help for a list of commands."
+    IDS_UNKNOWN_COMMAND     "Unknown command entered, type /help for help."
+    IDS_CHAT_HELP3          "/motd - Display the server signon message\r\n/join - Shows your current channel\r\n/join #xxxx - Switches to channel xxxx\r\n/part #xxxx - Leaves a Channel\r\n/ping name - Pings player name, use * for all players\r\n/msg name - Send a private message\r\n/me action - To posture a message\r\n/ignore name - Ignore a user\r\n/away message - Mark yourself as away\r\n/noprivate message - Reject private messages\r\n/offer filename - Offer a file for download by others\r\n/deoffer num - Stop offering a file\r\n/get name number localname - Request a file\r\n/cancelget - Stop receiving a file\r\n/progress - Display progress on outgoing files\r\n/showoffers - Display a list of all offered files\r\n/whois name - Display user information"
+    IDS_CHANNEL_TOO_BIG     "Channel name must be 7 characters or less."
+    IDS_SWITCHING_CHANNELS  "Switching to channel "
+    IDS_CHANNEL_SELECTED    "You are currently on channel "
+    IDS_USER_ON             " is on channel "
+    IDS_QUERYING_SERVER     "\r\nRequesting the user list from the server..."
+    IDS_QUERYING_CHAT       "\r\nLooking for chat users..."
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    IDS_LAUNCHCFG           "Configure"
+    IDS_STRDUPTITLE         "You cannot use the same title for more than one item. Please choose another!"
+    IDS_STRMAXITEM          "Unable to add, you already have the maximum items in your launchpad!"
+    IDS_STRERROR            "Error"
+    IDS_STRFILEFILTER       "Files with Icons(*.exe;*.ico;*.dll) | *.exe; *.dll; *.ico ||"
+    IDS_STRFILEEXT          "*.exe;*.ico;*.dll"
+    IDS_STRFILENOEXIST      "That file does not exist!"
+    IDS_STRGAMEWAR2         "Warcraft II"
+    IDS_STRGAMEDESCENT      "Descent"
+    IDS_STRGAMED2           "Descent II"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REQUESTING_SERVER_ID "Requesting the Server Message..."
+    IDS_SIGNOFF_MESSAGE     "Leaving"
+    IDS_CHANNEL_NEEDS_POUND "Channel name must begin with #"
+    IDS_CHAT_HELP2A         "\r\nAll commands are prefixed with a '/', any other character will be transmitted on the current channel.\r\n/help - Displays this help information"
+    IDS_CHAT_HELP4          "/subnet netname [password] - Set your subnet"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_SETPREFERENCES      "Setup PCONW\nSet Preferences"
+    IDC_FILE_CLEARWINDOW    "Clear Window Buffer\nClear Window"
+    ID_LIST_USERS           "Lists the users currently in chat\nShow Chat Users"
+    ID_SERVER_INFO          "Lists the users logged onto the server\nShow Server Users"
+    IDC_PING                "Send a Ping Through the Chat server\nPing the User through the Chat server"
+    ID_FILE_LOG             "Log Window to File\nLog Window"
+    IDC_JOINSEL             "Join the channel that is highlighted\nJoin Selected Channel"
+    LAUNCH_CFG              "Configure the Launchpad\nConfigure the Launchpad"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CLEARWINDOW         "Clear the Active Window\nClear the Active Window"
+    IDC_STOPSCROLL          "Stop scrolling the chat window\nFreeze the chat window"
+    IDC_SETAWAY             "Mark yourself away\nSet an away message"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRGAMEQUAKE        "Quake"
+    IDS_STRGAMEDUKE3D       "Duke Nukem 3D"
+    IDS_STRGAMEDOOM2        "Doom II"
+    IDS_STRGAMED2WIN95      "Descent II for Win95"
+    IDS_STRGAMERADOS        "Red Alert (DOS)"
+    IDS_STRGAMERA95         "Red Alert (Win95)"
+    IDS_STRSCAN1            "Do you want to scan drive"
+    IDS_STRSCAN2            "for games?"
+    IDS_STRXFERINPRGS       "** File Transfer already in progress!"
+    IDS_STRRQDILE           "Requesting file..."
+    IDS_STRREQFILE          "requested file"
+    IDS_STRFILENA           "Requested file not available..."
+    IDS_STRRCVFILEINFO      "Received file info..."
+    IDS_STRFXFRTO           "File Transfer to"
+    IDS_STRCOMPLETE         "complete"
+    IDS_STRFILEXFRTO        "** Incoming file transfer timed out."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRTIMEOUT          "Timeout"
+    IDS_STRTO               "timed out"
+    IDS_STRBYTERCV          "bytes recieved."
+    IDS_STRNOFILE           "** You aren't receiving a file!"
+    IDS_STRCANCELXFR        "** Canceled file transfer!"
+    IDS_STRDWNLDABORT       "Download aborted"
+    IDS_STRSENT             "Sent"
+    IDS_STRBYTESTO          "bytes to"
+    IDS_STRISOFFER          "is offering"
+    IDS_STRASFILE           "as file"
+    IDS_STRRCVSCS           "received sucessfully."
+    IDS_STRBYTES            "bytes"
+    IDS_STRBYTESSEC         "bytes/sec."
+    IDS_STRSAMPTXT          "Sample Text"
+    IDS_STRKAHNCCERR        "Kahn Control Center must be active to use chat."
+    IDS_STRMME              "Unable to Map memory"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRFKEY2            "/help"
+    IDS_STRFKEY3            "/users"
+    IDS_STRFKEY4            "/who"
+    IDS_STRFKEY5            "/showoffers"
+    IDS_STRFKEY6            "/away Registering this great program!"
+    IDS_STRFKEY7            "/me slaps $USER with a SpamFish© (Spamfish© is a registered trademark of PooterMan)"
+    IDS_STRFKEY8            "/me just hit F8, thinking I was playing a game or something...."
+    IDS_STRFKEY9            "/me loves this program! (REALLY!)"
+    IDS_STRFKEY10           "/me challenges $USER to a game of Descent 2."
+    IDS_STRFKEY11           "/away Get the latest kahn update at http://www.stargatenetworks.com"
+    IDS_STRFKEY12           "This program rocks!!!!"
+    IDS_STRLEAVMSG          "Leaving"
+    IDS_STRDFTCHAN          "#kahn"
+    IDS_STRDFTFONT          "Courier New"
+    IDS_STRNEWWINERR        "Unable to create new Window!"
+    IDS_STRNONEWSOCK        "Unable to create local socket."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRPINGRSP          "Ping response from"
+    IDS_STRISJOINING        "is joining channel"
+    IDS_STRISLEAVING        "is leaving chat"
+    IDS_STRLVGCHAN          "is leaving channel"
+    IDS_STRNOFILEOFF        "is not being offered"
+    IDS_STRASTFILE          "** File "
+    IDS_STRFILENF           " not found."
+    IDS_STRNOFILEOFFSLT     "** All file offer slots are in use! Use /deoffer."
+    IDS_STRNOUSER           "* User not present!"
+    IDS_STRSPECFILENAME     "* You must specify a file number to request!"
+    IDS_STRSPECSAVENAME     "* You must specify a file name to save as!"
+    IDS_STRASTFILEBRK       "* File ["
+    IDS_STRFILERQFROM       "] is being requested from "
+    IDS_STRISAWAY           "is away ("
+    IDS_STRISBACK           "is back."
+    IDS_STRREJECTING        "You are now rejecting private messages("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRISREJECTING      "is rejecting private messages ("
+    IDS_STRNOTREJECTING     "You are no longer rejecting private messages"
+    IDS_STRUSER             "User"
+    IDS_STRISBEINGIGN       "is being ignored"
+    IDS_STRNOTIGN           "is no longer being ignored"
+    IDS_STRAASTFILEB        "** File ["
+    IDS_STRCANTSENDTO       "Unable to send message to"
+    IDS_STRUNKNOWNIP        ", unknown IP address."
+    IDS_STRLVCHAN           "* Leaving channel "
+    IDS_STRWHO              "/who"
+    IDS_STRLUSERS           "/users"
+    IDS_STRBADLOG           "Unable to Create Log File"
+    IDS_CMDMSG              "msg"
+    IDS_CMDWHO              "who"
+    IDS_CMDUSERS            "users"
+    IDS_CMDPING             "ping"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CMDHELP             "help"
+    IDS_CMDIGNORE           "ignore"
+    IDS_CMDMOTD             "motd"
+    IDS_CMDKILL             "kill"
+    IDS_CMDGET              "get"
+    IDS_CMDOFFER            "offer"
+    IDS_CMDCANCELGET        "cancelget"
+    IDS_CMDWHOIS            "whois"
+    IDS_CMDNOPRIVATE        "noprivate"
+    IDS_CMDBAN              "ban"
+    IDS_CMDUNBAN            "unban"
+    IDS_CMDBLIST            "blist"
+    IDS_CMDDEOFFER          "deoffer"
+    IDS_CMDPROGRESS         "progress"
+    IDS_CMDSHOWOFFERS       "showoffers"
+    IDS_CMDJOIN             "join"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CMDME               "me"
+    IDS_CMDAWAY             "away"
+    IDS_CMDSUBNET           "subnet"
+    IDS_KEYIP               "$IP"
+    IDS_KEYLONGIP           "$LONGIP"
+    IDS_KEYUSER             "$USER"
+    IDS_STRLNCHQST          "Do you want to launch"
+    IDS_STRQUESTIONMK       "?"
+    IDS_STRLQT              "Launchpad"
+    IDS_CHANNEL_ALREADY     "* You are already in that Channel!"
+    IDS_CMDPART             "part"
+    IDS_STRFIRSTLAUNCH      "Would you like to configure the game launchpad?"
+    IDS_STRGAMENETMECH      "NetMech"
+    IDS_STRGAMEBRR          "Big Red Racing"
+    IDS_STRGAMEVP           "Virtual Pool"
+    IDS_STRGAMECC           "Command & Conquer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LAUNCHEXPLORER      "Launch MS Explorer\nLaunch MS Explorer"
+    IDM_SHOWCHAN            "Show the list of Channels\nShow the list of Channels"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRGAMETV           "Terminal Velocity"
+    IDS_STRGAMEOMF          "One Must Fall"
+    IDS_STRGAMELINKLS       "Links LS"
+    IDS_STRGAMED2DEMO       "Descent II Demo Version"
+    IDS_STRGAMEDIABLO       "Diablo"
+    IDS_STRGAMEA10          "A10 Cuba"
+    IDS_STRGAMESS           "Shattered Steel"
+    IDS_STRGAMENASCAR       "Nascar Racing"
+    IDS_STRTOPGUN           "Top Gun"
+    IDS_STRGAMERISK         "Risk"
+    IDS_STRGAMEMTM          "Monster Truck Madness"
+    IDS_STRING61579         "Masters Of Orion II (DOS)"
+    IDS_STRING61580         "Masters Of Orion II (Win95)"
+    IDS_STRNOAUTOSCAN       "Unable to open games.txt. We will not be able to automatically find games on your system."
+    IDS_CONNECTIRC          "Connecting to Chat Server....."
+    IDS_IRCCONNECTED        "Connected to Server, Sending User Information....."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DISCONNECTIRC       "You have been disconnected from the server!\nYou must exit this application to reconnect."
+    IDS_JOININGCHANNEL      "Attemping to Join channel..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM32839        "Start The Descent Game Spy"
+    ID_MENUDSPY             "Start Dspy\nThe Descent Game Spy"
+    IDM_DCCCHAT             "Start a Secure Peer-Peer chat session\\Initiate direct TCP chat session"
+    IDM_UDPPING             "Perform a true UDP ping\nClient to Client Ping"
+    IDM_IGNOREUSER          "Toggle Ignore on this user.\nToggle Ignore on this user."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\pconw.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
